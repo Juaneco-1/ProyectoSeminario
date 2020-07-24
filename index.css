@@ -1,0 +1,20 @@
+body{
+    background:url(./img/fondo.jpg) fixed;
+    background-size: cover;
+}
+
+.usuario img{
+    width: 220px;
+    height: 220px;
+}
+
+.usuario{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.modal-content {
+    background-color: rgb(208, 208, 216) !important;
+    opacity: 0.90;
+
+}
