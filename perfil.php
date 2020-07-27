@@ -40,7 +40,7 @@
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiler.php">Alquiler</a></li>
             <li class="nav-item"><a class="nav-link" href="index.php">
                     <div class="salir">
-                        <img src="./img/exit.png" alt="salir">
+                        <img src="./img/exit2.png" alt="salir">
                     </div>
                 </a></li>
         </ul>
