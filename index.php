@@ -15,7 +15,7 @@
         <div class="col-sm-8">
             <div class="modal-content">
                 <div class="col-12 usuario">
-                    <img src="./img/user.png" alt="Imagen de Usuario">
+                    <img src="./img/user2.jpeg" alt="Imagen de Usuario">
                 </div>
                 <form action="validar.php" method="POST" class="col-12" >
                 
@@ -24,10 +24,10 @@
                     </div>
     
                     <div class="form-group">
-                        <input type="password" class="form-control" name="pass" placeholder="Contrasena" required />   
+                        <input type="password" class="form-control" name="pass" placeholder="Contraseña" required />   
                     </div>
                                         
-                    <input type="submit" value="Enviar" class="btn btn-success"/>
+                    <input type="submit" value="Entrar" class="btn btn-success"/>
 
                     <?php 
                     

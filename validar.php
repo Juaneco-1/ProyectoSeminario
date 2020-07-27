@@ -15,7 +15,7 @@
 
     if($filas > 0)
     {
-        header("location:bienvenido.html");
+        header("location:peliculas.php");
     }
     else
     {

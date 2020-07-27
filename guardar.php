@@ -20,7 +20,7 @@
         
     }
     else{
-        echo "Registro exitoso!! <br> <a href = 'index.html'> Volver </a>";
+        echo "Registro exitoso!! <br> <a href = 'index.php'> Volver </a>";
     }
 
 
