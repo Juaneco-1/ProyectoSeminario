@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Login</title>
+    <link rel="Shortcut Icon" href="img/bamo1.png" type="image/png" />
     <link rel="stylesheet" href="index.css">
     <link
       rel="stylesheet"
@@ -34,7 +35,7 @@
                       if(isset($_GET["fallo"]) && $_GET["fallo"] == 'true')
                       {
                         
-                        echo "<div style='color:red' >Usuario o contraseña invalido </div>";
+                        echo "<div style='color:  red' >Usuario o contraseña invalido </div>";
                       }
                     
                     ?>

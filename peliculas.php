@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="Shortcut Icon" href="img/bamo1.png" type="image/png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peliculas</title>
@@ -38,6 +39,7 @@
                         Peliculas
                     </strong></a></li>
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiler.php">Alquiler</a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="nosotros.php">Nosotros</a></li>
             <li class="nav-item"><a class="nav-link" href="index.php">
                     <div class="salir">
                         <img src="./img/exit2.png" alt="salir">

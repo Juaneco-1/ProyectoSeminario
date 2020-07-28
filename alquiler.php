@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
+    <link rel="Shortcut Icon" href="img/bamo1.png" type="image/png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peliculas</title>
+    <title>Alquiler</title>
     <link rel="stylesheet" href="index.css">
 
     <!-- Bootstrap -->
@@ -36,6 +37,8 @@
             <li class="nav-item active"><a class="nav-link" style="color: #381DBF;    font-size: 2rem " href="peliculas.php">
                         Peliculas</a></li>
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiler.php"><strong>Alquiler</strong> </a></li>
+            
+            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="nosotros.php">Nosotros</a></li>
             <li class="nav-item"><a class="nav-link" href="index.php">
                     <div class="salir">
                         <img src="./img/exit2.png" alt="salir">
