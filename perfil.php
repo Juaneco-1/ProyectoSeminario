@@ -21,6 +21,41 @@
         setInterval("actualizar()", 200000);
     </script>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+        button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+    </style>
 </head>
 
 
@@ -38,17 +73,33 @@
                         Peliculas
                     </a></li>
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiladas.php">Alquiler</a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="nosotros.php"><strong>Nosotros</strong></a></li>
             <li class="nav-item"><a class="nav-link" href="index.php">
                     <div class="salir">
                         <img src="./img/exit.png" alt="salir">
                     </div>
                 </a></li>
         </ul>
+
     </div>
 </nav>
 
 <body>
     
+    <h2 style="text-align:center">Hola, $usuario</h2>
+        <div class="card">
+            <img src="./img/sergio.jpg" alt="tu imagen" style="width:100%">
+            <h1>Sergio Gómez</h1>
+            <p class="title">Desarrollador</p>
+            <p>UDENAR</p>
+            <div style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Ponerse en contacto</button></p>
+        </div>
 
 </body>
 

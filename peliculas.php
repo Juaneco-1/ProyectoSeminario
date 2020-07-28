@@ -40,6 +40,7 @@
                         Peliculas
                     </strong></a></li>
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiladas.php">Alquiler</a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="nosotros.php"><strong>Nosotros</strong></a></li>
             <li class="nav-item"><a class="nav-link" href="cerrar_sesion.php">
                     <div class="salir">
                         <img src="./img/exit.png" alt="salir">
@@ -70,7 +71,7 @@
                                 $usuario;
                                 if(isset($_GET["pelicula"]) && $_GET["pelicula"]=='true')
                                 {
-                                    echo "<script> alert('alquilada con exito');</script>";
+                                    echo "<script> alert('Alquilada con exito');</script>";
                                 
                                 }
                                 
