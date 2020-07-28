@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,6 +48,77 @@
 
 <body>
 
+    <?php 
+        
+        
+        
+        /* if(isset($_GET["usuario"]) && $_GET["usuario"] != "") 
+        {
+            $usuario=$_GET['usuario'];
+            
+        }
+        else{
+            echo "nada de usuario";
+        }
+        if(isset($_GET['pelicula'])) 
+        {
+            echo $_GET['pelicula'];
+        }
+        else{
+            echo "nada de pelicula";
+        } */
+
+        /* if(isset($_GET['usuario'])) 
+        {
+            $usuario=$_GET['usuario'];
+            echo $usuario;
+        }
+        else{
+            echo "nada de usuario";
+        } */
+
+        //echo $usuario;
+    
+        $conexion = mysqli_connect("localhost","root","","usuario");
+        
+        $pelicula_id=$_GET['pelicula'];
+        $nombre_pelicula=$_GET['nombre'];
+        echo $pelicula_id;
+        echo $nombre_pelicula;
+
+        $usuario =$_SESSION['correo'];
+        echo $_SESSION['correo'];
+
+
+
+        $consulta = "INSERT INTO serie_user VALUES ('$usuario','$pelicula_id','$nombre_pelicula')";
+
+        $ejecutar = mysqli_query($conexion,$consulta);
+
+        if(!$ejecutar)
+        {
+            echo "Error al ingresar esta pelicula";
+            
+            
+        }
+        else{
+            echo "Pelicula Alquilada Existosamente!!";
+            header("location:peliculas.php");
+        }
+
+
+        $conexion->close();
+
+
+
+
+        
+
+
+
+
+    ?>
+    
 
 </body>
 

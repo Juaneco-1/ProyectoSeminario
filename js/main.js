@@ -2,6 +2,7 @@ const API_KEY = 'c671ffe'
 
 function add(movieId) {
   alert(`Debo agregar la pelicula ${movieID}`)
+  
 }
 
 // Busque el elemeto con id #form
@@ -24,8 +25,8 @@ $('#form').submit(e => {
           Response: true | false
         }
       */
-      // Obtenga el objeto con id res
-      let cardsContainer = $('#res')
+      // Obtenga el objeto con id res, y vaciarlo
+      let cardsContainer = $('#res').empty() /* SOLO AGREGUE EL METODO EMPTY() */
       // Recorrer las peliculas
       data.Search.map(movie => {
         // Agregue las peliculas en HTML
@@ -37,12 +38,23 @@ $('#form').submit(e => {
             <img src='${movie.Poster}' alt='Poster'/>
             <div class='card-body'>
               ${movie.Year}
+              
             </div>
             <div class='card-footer'>
-              <a class='btn btn-info' href='add.php/?${movie.imdbID}'>Alquilar 💵</a>
+            
+            
+              <a class="btn btn-info"   href="alquiler.php?pelicula=${movie.imdbID} & nombre=${movie.Title}" id="alquilar" >Alquilar 💵</a>
+
+              
+
+              
             </div>
           </div>
         `)
+
+        
+
       })
     })
 })
+

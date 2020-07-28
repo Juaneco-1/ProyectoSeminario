@@ -1,7 +1,9 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peliculas</title>
@@ -38,7 +40,7 @@
                         Peliculas
                     </strong></a></li>
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiler.php">Alquiler</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.php">
+            <li class="nav-item"><a class="nav-link" href="cerrar_sesion.php">
                     <div class="salir">
                         <img src="./img/exit.png" alt="salir">
                     </div>
@@ -48,6 +50,13 @@
 </nav>
 
 <body>
+
+    
+    <div>
+        <?php echo "Bienvenido " .$_SESSION['correo']; ?>
+
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="col-md-12 my-5">
@@ -57,6 +66,17 @@
                     </div>
                     <div class="card-body">
                         <form action='/' id='form'>
+                            <?php 
+                                $usuario;
+                                if(isset($_GET["usuario"]))
+                                {
+                                    $usuario=$_GET["usuario"];
+                                    header("location:alquiler.php?usuario=$usuario");
+                                
+                                }
+                                
+                                
+                            ?>
                             <div class="form-group">
                                 <div class="input-group">
                                     <input class="form-control modal-content" type="text" placeholder="Busca una pelicula" id='movie'>
@@ -65,6 +85,7 @@
                             </div>
                         </form>
                     </div>
+                
                 </div>
             </div>
         </div>
