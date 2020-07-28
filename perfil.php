@@ -37,7 +37,7 @@
                     
                         Peliculas
                     </a></li>
-            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiler.php">Alquiler</a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiladas.php">Alquiler</a></li>
             <li class="nav-item"><a class="nav-link" href="index.php">
                     <div class="salir">
                         <img src="./img/exit.png" alt="salir">

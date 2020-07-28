@@ -39,7 +39,7 @@
                     <strong>
                         Peliculas
                     </strong></a></li>
-            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiler.php">Alquiler</a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiladas.php">Alquiler</a></li>
             <li class="nav-item"><a class="nav-link" href="cerrar_sesion.php">
                     <div class="salir">
                         <img src="./img/exit.png" alt="salir">
@@ -53,7 +53,7 @@
 
     
     <div>
-        <?php echo "Bienvenido " .$_SESSION['correo']; ?>
+        <?php  $usuario = $_SESSION['correo']; echo "<h1 class='text-success'>Bienvenido</h1>"."<h1 class='text-danger'>$usuario</h1>"?>
 
     </div>
 
@@ -68,12 +68,12 @@
                         <form action='/' id='form'>
                             <?php 
                                 $usuario;
-                                if(isset($_GET["usuario"]))
+                                if(isset($_GET["pelicula"]) && $_GET["pelicula"]=='true')
                                 {
-                                    $usuario=$_GET["usuario"];
-                                    header("location:alquiler.php?usuario=$usuario");
+                                    echo "<script> alert('alquilada con exito');</script>";
                                 
                                 }
+                                
                                 
                                 
                             ?>

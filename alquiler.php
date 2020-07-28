@@ -36,7 +36,7 @@
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="perfil.php">Perfil</a></li>
             <li class="nav-item active"><a class="nav-link" style="color: #381DBF;    font-size: 2rem " href="peliculas.php">
                         Peliculas</a></li>
-            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiler.php"><strong>Alquiler</strong> </a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiladas.php"><strong>Alquiler</strong> </a></li>
             <li class="nav-item"><a class="nav-link" href="index.php">
                     <div class="salir">
                         <img src="./img/exit.png" alt="salir">
@@ -97,25 +97,17 @@
 
         if(!$ejecutar)
         {
-            echo "Error al ingresar esta pelicula";
+            echo "Error al ingresar esta pelicula, Repetida para este usuario";
             
             
         }
         else{
-            echo "Pelicula Alquilada Existosamente!!";
-            header("location:peliculas.php");
+            
+            header("location:peliculas.php?pelicula=true");
         }
 
 
         $conexion->close();
-
-
-
-
-        
-
-
-
 
     ?>
     
