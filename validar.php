@@ -1,6 +1,7 @@
 <?php 
     $usuario =$_POST['email'];
     $clave =$_POST['pass'];
+    
 
     //conexion base de datos
     $conexion = mysqli_connect("localhost","root","","usuario");
@@ -15,11 +16,9 @@
     $sql_sesion->bind_param('ss',$usuario,$clave);
 
     $sql_sesion->execute();
-
+   
     //$resultado = mysqli_query($conexion,$consulta);
     $resultado =$sql_sesion->get_result();
-
-
     //$filas=mysqli_num_rows($resultado);
     $filas = $resultado->num_rows;
     echo $filas;
@@ -33,6 +32,7 @@
             {
                 echo "Entro al 2do if";
                 $_SESSION['correo']=$fila['correo'];
+                $_SESSION['nombre']=$fila['nombre'];
 
                 /* echo "OK";
                 echo $_SESSION['correo']; */

@@ -1,3 +1,15 @@
+<?php
+session_start();
+$usuario = $_SESSION['correo'];
+$nombre = $_SESSION['nombre'];
+$grava = trim($usuario); // "MyEmailAddress@example.com"
+$grava = strtolower($grava); // "myemailaddress@example.com"
+$hash_grava = md5($grava);
+$grava1 = 'https://www.gravatar.com/avatar/';
+$tamaño = '=100';
+$imggrava = $grava1 . $hash_grava . $tamaño;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,10 +81,10 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" style="color: #381DBF;    font-size: 2rem" href="index.php"><img src="./img/ini.png" alt=""></a>
+            <a class="navbar-brand" style="color: #381DBF;    font-size: 2rem" href="nosotros.php"><img src="./img/ini.png" alt=""></a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="perfil.php"><strong>Perfil</strong> </a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="perfil.php"><strong><?php echo $nombre ?></strong> </a></li>
             <li class="nav-item active"><a class="nav-link" style="color: #381DBF;    font-size: 2rem " href="peliculas.php">
 
                     Peliculas
@@ -81,7 +93,7 @@
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="nosotros.php">Nosotros</a></li>
             <li class="nav-item"><a class="nav-link" href="index.php">
                     <div class="salir">
-                        <img src="./img/exit.png" alt="salir">
+                        <img src="./img/exit2.png" alt="salir">
                     </div>
                 </a></li>
         </ul>
@@ -91,10 +103,13 @@
 
 <body>
 
-    <h2 style="text-align:center">Hola, <?php echo $usuario?></h2>
+    <h2 style="text-align:center; color: #BB2F4C;">Hola, <?php echo $nombre ?></h2>
     <div class="card">
-        <img src="./img/sergio.jpg" alt="tu imagen" style="width:100%">
-        <h1>Sergio Gómez</h1>
+        <?php echo "<img style='margin: auto;
+                    width: 60%;
+                    padding: 10px;' 
+                    src='$imggrava' alt='tu imagen' style='width:100%'>" ?>
+        <?php echo $usuario ?>
         <p class="title">Desarrollador</p>
         <p>UDENAR</p>
         <div style="margin: 24px 0;">

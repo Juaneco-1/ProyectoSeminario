@@ -1,4 +1,5 @@
 <?php
+    
     $host = "localhost";
     $user = "root";
     $pass = "";
@@ -13,11 +14,13 @@
     $sql ="INSERT INTO usuario VALUES ('$nombre','$correo','$contrasena')";
     $ejecutar = mysqli_query($con,$sql);
 
+    
+    
+
     if(!$ejecutar)
     {
         header("location:registro.php?fallo=true");
-        
-        
+                
     }
     else{
         echo "Registro exitoso!! <br> <a href = 'index.php'> Volver </a>";
