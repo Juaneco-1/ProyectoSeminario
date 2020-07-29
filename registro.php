@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="Shortcut Icon" href="img/bamo1.png" type="image/png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de registro</title>
-    <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-    crossorigin="anonymous"
-  />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 </head>
+
 <body>
     <div class="container">
         <div class="row justify-content-center mt-5">
@@ -43,17 +41,15 @@
                         </div>
 
                     </div>
-                    
+
                     <input type="submit" class="btn btn-info"></input>
 
-                    <?php 
-                    
-                        if(isset($_GET["fallo"]) && $_GET["fallo"] == 'true')
-                        {
-                            echo "<script> alert ('El E-mail ya está registrado') </script>";
-                        
-                        }
-                
+                    <?php
+
+                    if (isset($_GET["fallo"]) && $_GET["fallo"] == 'true') {
+                        echo "<script> alert ('El E-mail ya está registrado') </script>";
+                    }
+
                     ?>
 
                     <a href="./index.php" class="btn btn-danger ml-5">Volver</a>
@@ -66,4 +62,5 @@
     </div>
 
 </body>
+
 </html>

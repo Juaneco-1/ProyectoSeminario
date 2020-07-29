@@ -30,14 +30,14 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" style="color: #381DBF;    font-size: 2rem" href="#"><img src="./img/ini.png" alt=""></a>
+            <a class="navbar-brand" style="color: #381DBF;    font-size: 2rem" href="index.php"><img src="./img/ini.png" alt=""></a>
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="perfil.php">Perfil</a></li>
             <li class="nav-item active"><a class="nav-link" style="color: #381DBF;    font-size: 2rem " href="peliculas.php">
                         Peliculas</a></li>
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiladas.php"><strong>Alquiler</strong> </a></li>
-            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="nosotros.php"><strong>Nosotros</strong></a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="nosotros.php">Nosotros</a></li>
             <li class="nav-item"><a class="nav-link" href="index.php">
                     <div class="salir">
                         <img src="./img/exit.png" alt="salir">

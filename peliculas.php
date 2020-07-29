@@ -3,8 +3,9 @@
 <html lang="en">
 
 <head>
-    
+<link rel="Shortcut Icon" href="img/bamo1.png" type="image/png" />
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peliculas</title>
     <link rel="stylesheet" href="index.css">
@@ -31,7 +32,7 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" style="color: #381DBF;    font-size: 2rem" href="#"><img src="./img/ini.png" alt=""></a>
+            <a class="navbar-brand" style="color: #381DBF;    font-size: 2rem" href="index.php"><img src="./img/ini.png" alt=""></a>
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="perfil.php">Perfil</a></li>
@@ -40,7 +41,7 @@
                         Peliculas
                     </strong></a></li>
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiladas.php">Alquiler</a></li>
-            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="nosotros.php"><strong>Nosotros</strong></a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="nosotros.php">Nosotros</a></li>
             <li class="nav-item"><a class="nav-link" href="cerrar_sesion.php">
                     <div class="salir">
                         <img src="./img/exit.png" alt="salir">
@@ -53,12 +54,10 @@
 <body>
 
     
-    <div>
-        <?php  $usuario = $_SESSION['correo']; echo "<h1 class='text-success'>Bienvenido</h1>"."<h1 class='text-danger'>$usuario</h1>"?>
-
-    </div>
+    
 
     <div class="container">
+    <?php  $usuario = $_SESSION['correo']; echo "<h1 class='text-success'>Bienvenido</h1>"."<h1 class='text-danger'>$usuario</h1>"?>
         <div class="row">
             <div class="col-md-12 my-5">
                 <div class="card">

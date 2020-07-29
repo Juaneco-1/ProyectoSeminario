@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Login</title>
+    <link rel="Shortcut Icon" href="img/bamo1.png" type="image/png" />
     <link rel="stylesheet" href="index.css">
     <link
       rel="stylesheet"

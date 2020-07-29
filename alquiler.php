@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+    <link rel="Shortcut Icon" href="img/bamo1.png" type="image/png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peliculas</title>
@@ -30,14 +31,14 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" style="color: #381DBF;    font-size: 2rem" href="#"><img src="./img/ini.png" alt=""></a>
+            <a class="navbar-brand" style="color: #381DBF;    font-size: 2rem" href="index.php"><img src="./img/ini.png" alt=""></a>
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="perfil.php">Perfil</a></li>
             <li class="nav-item active"><a class="nav-link" style="color: #381DBF;    font-size: 2rem " href="peliculas.php">
-                        Peliculas</a></li>
+                    Peliculas</a></li>
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiladas.php"><strong>Alquiler</strong> </a></li>
-            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="nosotros.php"><strong>Nosotros</strong></a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="nosotros.php">Nosotros</a></li>
             <li class="nav-item"><a class="nav-link" href="index.php">
                     <div class="salir">
                         <img src="./img/exit.png" alt="salir">
@@ -49,11 +50,11 @@
 
 <body>
 
-    <?php 
-        
-        
-        
-        /* if(isset($_GET["usuario"]) && $_GET["usuario"] != "") 
+    <?php
+
+
+
+    /* if(isset($_GET["usuario"]) && $_GET["usuario"] != "") 
         {
             $usuario=$_GET['usuario'];
             
@@ -69,7 +70,7 @@
             echo "nada de pelicula";
         } */
 
-        /* if(isset($_GET['usuario'])) 
+    /* if(isset($_GET['usuario'])) 
         {
             $usuario=$_GET['usuario'];
             echo $usuario;
@@ -78,40 +79,36 @@
             echo "nada de usuario";
         } */
 
-        //echo $usuario;
-    
-        $conexion = mysqli_connect("localhost","root","","usuario");
-        
-        $pelicula_id=$_GET['pelicula'];
-        $nombre_pelicula=$_GET['nombre'];
-        echo $pelicula_id;
-        echo $nombre_pelicula;
+    //echo $usuario;
 
-        $usuario =$_SESSION['correo'];
-        echo $_SESSION['correo'];
+    $conexion = mysqli_connect("localhost", "root", "", "usuario");
 
+    $pelicula_id = $_GET['pelicula'];
+    $nombre_pelicula = $_GET['nombre'];
+    echo $pelicula_id;
+    echo $nombre_pelicula;
 
-
-        $consulta = "INSERT INTO serie_user VALUES ('$usuario','$pelicula_id','$nombre_pelicula')";
-
-        $ejecutar = mysqli_query($conexion,$consulta);
-
-        if(!$ejecutar)
-        {
-            echo "Error al ingresar esta pelicula, Repetida para este usuario";
-            
-            
-        }
-        else{
-            
-            header("location:peliculas.php?pelicula=true");
-        }
+    $usuario = $_SESSION['correo'];
+    echo $_SESSION['correo'];
 
 
-        $conexion->close();
+
+    $consulta = "INSERT INTO serie_user VALUES ('$usuario','$pelicula_id','$nombre_pelicula')";
+
+    $ejecutar = mysqli_query($conexion, $consulta);
+
+    if (!$ejecutar) {
+        echo "Error al ingresar esta pelicula, Repetida para este usuario";
+    } else {
+
+        header("location:peliculas.php?pelicula=true");
+    }
+
+
+    $conexion->close();
 
     ?>
-    
+
 
 </body>
 

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="Shortcut Icon" href="img/bamo1.png" type="image/png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peliculas</title>
@@ -30,10 +31,12 @@
             text-align: center;
             font-family: arial;
         }
+
         .title {
             color: grey;
             font-size: 18px;
         }
+
         button {
             border: none;
             outline: 0;
@@ -46,11 +49,13 @@
             width: 100%;
             font-size: 18px;
         }
+
         a {
             text-decoration: none;
             font-size: 22px;
             color: black;
         }
+
         button:hover,
         a:hover {
             opacity: 0.7;
@@ -64,16 +69,16 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" style="color: #381DBF;    font-size: 2rem" href="#"><img src="./img/ini.png" alt=""></a>
+            <a class="navbar-brand" style="color: #381DBF;    font-size: 2rem" href="index.php"><img src="./img/ini.png" alt=""></a>
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="perfil.php"><strong>Perfil</strong> </a></li>
             <li class="nav-item active"><a class="nav-link" style="color: #381DBF;    font-size: 2rem " href="peliculas.php">
-                    
-                        Peliculas
-                    </a></li>
+
+                    Peliculas
+                </a></li>
             <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="alquiladas.php">Alquiler</a></li>
-            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="nosotros.php"><strong>Nosotros</strong></a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #381DBF;    font-size: 2rem" href="nosotros.php">Nosotros</a></li>
             <li class="nav-item"><a class="nav-link" href="index.php">
                     <div class="salir">
                         <img src="./img/exit.png" alt="salir">
@@ -85,21 +90,21 @@
 </nav>
 
 <body>
-    
-    <h2 style="text-align:center">Hola, $usuario</h2>
-        <div class="card">
-            <img src="./img/sergio.jpg" alt="tu imagen" style="width:100%">
-            <h1>Sergio Gómez</h1>
-            <p class="title">Desarrollador</p>
-            <p>UDENAR</p>
-            <div style="margin: 24px 0;">
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-            </div>
-            <p><button>Ponerse en contacto</button></p>
+
+    <h2 style="text-align:center">Hola, <?php echo $usuario?></h2>
+    <div class="card">
+        <img src="./img/sergio.jpg" alt="tu imagen" style="width:100%">
+        <h1>Sergio Gómez</h1>
+        <p class="title">Desarrollador</p>
+        <p>UDENAR</p>
+        <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
         </div>
+        <p><button>Ponerse en contacto</button></p>
+    </div>
 
 </body>
 
